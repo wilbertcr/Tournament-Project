@@ -1,17 +1,18 @@
 # Full Stack Web Developer Nanodegree
 
-# Project 2: Tournament Planner
+Project 2: Tournament Planner
+============================================
 
-**Project Description: **
-
+Project Description:
+============================================
 In this project, I wrote a Python module that uses the PostgreSQL database to keep track of players and matches in a game tournament.
 
 The game tournament uses the Swiss system for pairing up players in each round: players are not eliminated, and each player should be paired with another player with the same number of wins, or as close as possible.
 
 This project has two parts: Defining the database schema (SQL table definitions), and writing the code that will use it.
 
-**Functions in tournament.py**
-
+Functions in tournament.py
+============================================
 registerPlayer(name)
 
 Adds a player to the tournament by putting an entry in the database. The database should assign an ID number to the player. Different players may have the same names but will receive different ID numbers.
@@ -41,7 +42,7 @@ swissPairings()
 Given the existing set of registered players and the matches they have played, generates and returns a list of pairings according to the Swiss system. Each pairing is a tuple (id1, name1, id2, name2), giving the ID and name of the paired players. For instance, if there are eight registered players, this function should return four pairings. This function should use playerStandings to find the ranking of players.
 
 Extra credit:
-
+============================================
 - [x] Prevent rematches between players.
 - [x] Don’t assume an even number of players. 
 - [x] If there is an odd number of players, assign one player a “bye” (skipped round). A bye counts as a free win. A player should not receive more than one bye in a tournament.
@@ -82,6 +83,6 @@ CTRL+D
 
 ![alt text](https://raw.githubusercontent.com/wilbertcr/Tournament-Project/master/run_test.png)
 
-You should see several pairings# files in the tournament folder. Each file contains a round of matches, as prescribed
-by swissPairings(tournament_id). The outcomes of each match are semi-randomly chosen but equally likely in probability and
-includes draws.
+You should see several pairings# files in the tournament folder. Each file contains a round of matches, as prescribed 
+by swissPairings(tournament_id). The outcomes of each match are semi-randomly chosen but equally likely in probability 
+and includes draws.
